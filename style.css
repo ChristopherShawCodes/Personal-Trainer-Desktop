@@ -453,6 +453,111 @@ h2 {
 	color: red;
 }
 
+
+CSS Pretty Print
+ 
+/*-----Reset-----*/
+ form {
+	 width: 50%;
+	 margin: 0 auto;
+	 padding: 1em 0;
+}
+ button {
+	 margin: 0px;
+}
+ input, button {
+	 border: none;
+	 background-image: none;
+	 background-color: transparent;
+	 -webkit-box-shadow: none;
+	 -moz-box-shadow: none;
+	 box-shadow: none;
+}
+ textarea {
+	 border: none;
+}
+/*-----Styles-----*/
+
+
+.contact{
+	margin: 2rem;
+	width: 70%;
+}
+
+
+ button, input, textarea {
+	 font-family: 'Saira Semi Condensed', sans-serif;
+}
+ .hidden {
+	 position: absolute !important;
+	 top: -9999px !important;
+	 left: -9999px !important;
+}
+ .input {
+	 width: 100%;
+	 margin-bottom: 0.75em;
+}
+ .icon-container {
+	 display: flex;
+	 flex-direction: row-reverse;
+	 flex-wrap: nowrap;
+	 width: 100%;
+}
+ .icon {
+	 background-color: #fff;
+	 box-shadow: 0px 3px 10px rgba(0, 0, 0, .10);
+	 /* box-shadow: 0px 3px 10px cadetblue; */
+	 padding: 0.8em;
+	 display: inline-block;
+	 align-self: stretch;
+	 color: #ddd;
+	 transition: color 0.75s;
+}
+ .icon-content {
+	 background-color: #fff;
+	 box-shadow: 0px 3px 10px rgba(0, 0, 0, .10);
+	 padding: 0.8em;
+	 width: 100%;
+	 z-index: 2;
+}
+ .icon-content:focus {
+	 outline: 2px solid red;
+}
+ .icon-content:focus ~ .icon {
+	 color: red;
+}
+ .btn {
+	 cursor: pointer;
+	 background-color: #fff;
+	 box-shadow: 0px 3px 10px rgba(0, 0, 0, .10);
+	 width: 100%;
+	 padding: 0.8em;
+	 border-radius: 2em;
+}
+ .btn:hover {
+	 background: red;
+	 background: -webkit-linear-gradient(45deg, red, #ff5858);
+	 background: linear-gradient(45deg, red, #ff5858);
+	 color: #fff;
+	 box-shadow: 0px 5px 5px rgba(0, 0, 0, .125);
+	 animation-name: button-hover;
+	 animation-duration: 1s;
+	 animation-fill-mode: forwards;
+	 animation-timing-function: cubic-bezier(0.38, 0.38, 0.12, 0.96);
+}
+ @keyframes button-hover {
+	 100% {
+		 background: red;
+		 background: -webkit-linear-gradient(45deg, red, #ff5858);
+		 background: linear-gradient(45deg, red, #ff5858);
+		 color: #fff;
+		 border-radius: 0px;
+	}
+}
+ 
+ 
+
+
 .contact-items {
 	padding-top: 2rem;
 }
